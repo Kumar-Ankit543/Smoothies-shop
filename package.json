@@ -18,10 +18,6 @@
   "scripts": {
     "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamshaunjp/node-express-jwt-auth.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC"

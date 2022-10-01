@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const { requireAuth, checkUser } = require("./middleware/authMiddleware");
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 // middleware
 app.use(express.static("public"));
@@ -23,7 +24,7 @@ mongoose
     useCreateIndex: true,
   })
   .then((result) =>
-    app.listen(3000, () => {
+    app.listen(PORT, () => {
       console.log(`Server running at port 3000...`);
     })
   )

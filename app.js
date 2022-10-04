@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const authRoutes = require("./routes/authRoutes");
@@ -16,9 +17,9 @@ app.use(cookieParser());
 app.set("view engine", "ejs");
 
 // database connection
-const dbURI = "mongodb://127.0.0.1:27017/auth-net-ninja";
+//const dbURI = "mongodb://127.0.0.1:27017/auth-net-ninja";
 mongoose
-  .connect(dbURI, {
+  .connect(process.env.dbURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

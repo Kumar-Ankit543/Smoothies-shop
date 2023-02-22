@@ -17,7 +17,6 @@ app.use(cookieParser());
 app.set("view engine", "ejs");
 
 // database connection
-//const dbURI = "mongodb://127.0.0.1:27017/auth-net-ninja";
 mongoose
   .connect(process.env.dbURI, {
     useNewUrlParser: true,

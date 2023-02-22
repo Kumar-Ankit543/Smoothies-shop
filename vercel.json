@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "node-express-jwt-auth",
+  "builds": [{ "src": "app.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/server.js" }]
+}
